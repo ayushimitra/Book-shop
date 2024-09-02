@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
-  <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Book Store</title>
 </head>
 <body>
-  <div>moving text || moving text || moving text || moving text || moving tex</div>
-  <nav class="navbar">
-    <div class="logo">Brand</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-    </ul>  
-      <input type="text" placeholder="Search..">
-    <ul class="nav-links">  
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <img src="image.png" alt="User Icon" width="25" >
-    <div class="hamburger">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <div class="page1">
+    <div class="nav">
+        <h1>Citadel</h1>
+        <div class="search">
+            <input type="text" placeholder="Search for Books">
+          </div>
+        <i class="ri-shopping-bag-line"></i>
+        <i class="ri-account-circle-line"></i>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
     </div>
-  </nav>
-
-  <script src="script.js"></script>
+    <div class="Menu-bar">
+        <a href="#"><h3>Home</h3></a>
+        <a href="#"><h3>Categories</h3></a>
+        <a href="#"><h3>Brands</h3></a>
+        <a href="#"><h3>Best Sellers</h3></a>
+        <a href="#"><h3>Pages</h3></a>
+      </div>
+      <div class="search1">
+        <input type="text" placeholder="Search for Books">
+      </div>
+    <section class="Container">
+        <h1>Featured Books</h1>
+    <div></div>
+    </section>
+    <div class="scroller">
+        <div id="scroller-in">
+            <h4>50% Discount .</h4>
+            <h4>Month End Sale .</h4>
+            <h4>Free Shipping and Return .</h4>
+            <h4>Online Support 24/7 .</h4>
+            <h4>Money Back Guarantee .</h4>
+        </div>
+        <div id="scroller-in">
+            <h4>50% Discount .</h4>
+            <h4>Month End Sale .</h4>
+            <h4>Free Shipping and Return .</h4>
+            <h4>Online Support 24/7 .</h4>
+            <h4>Money Back Guarantee .</h4>
+        </div>
+    </div>
+    <div class="page2">
+    <div class="slide-container">
+        <div class="slides">
+            <div class="slide"><img src="book1.jpg"></div>
+            <div class="slide"><img src="book2.jpg"></div>
+            <div class="slide"><img src="book3.jpg"></div>
+            <div class="slide"><img src="book1.jpg"></div>
+            <div class="slide"><img src="book2.jpg"></div>
+            <div class="slide"><img src="book3.jpg"></div>
+        </div>
+        <div class="controls">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
